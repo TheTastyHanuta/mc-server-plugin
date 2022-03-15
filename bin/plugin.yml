@@ -1,0 +1,17 @@
+name: Alleszusammen
+version: 1.0
+author: Hanuta
+main: az.main.Mainclass
+commands:
+  heal:
+  gm:
+  tc:
+  bc:
+  op:
+  deop:
+  tpa:
+  tpaccept:
+  tpadeny:
+  difficulty:
+  gamemode:
+  sleep:
