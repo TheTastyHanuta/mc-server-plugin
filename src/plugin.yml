@@ -1,5 +1,5 @@
-name: Alleszusammen
-version: 1.0
+name: mc-server-plugin
+version: 3.0
 author: Hanuta
 main: az.main.Mainclass
 commands:
