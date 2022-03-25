@@ -12,6 +12,8 @@ public class TpaDeny implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
 	{
+		if(sender instanceof Player) {
+		
 		Player p = (Player) sender;
 		
 		if(args.length == 0) {
@@ -19,15 +21,17 @@ public class TpaDeny implements CommandExecutor{
 			try {
 			
 			Player p2 = Mainclass.tpa.get(p);
-			
-			
+					
 			p.sendMessage(Mainclass.prefix + "§aTeleportation abgelehnt!");
 			
 			p2.sendMessage(Mainclass.prefix + "§aTeleportation abgelehnt!");
 			
 			Mainclass.tpa.remove(p, p2);
+			
+			
 			}catch(Exception ex){
 				p.sendMessage(Mainclass.prefix + "§cDu hast keine Anfrage!");
+				return true;
 			}
 			
 		}
@@ -35,7 +39,7 @@ public class TpaDeny implements CommandExecutor{
 			p.sendMessage(Mainclass.prefix + " §c/tpadeny");
 		}
 			
-		
+		}
 		return false;
 	}
 

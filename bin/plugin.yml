@@ -11,6 +11,7 @@ commands:
   deop:
   tpa:
   tpaccept:
+  tpacancel:
   tpadeny:
   difficulty:
   gamemode:

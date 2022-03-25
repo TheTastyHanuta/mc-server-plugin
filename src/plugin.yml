@@ -1,5 +1,5 @@
 name: Alleszusammen
-version: 2.0
+version: 1.0
 author: Hanuta
 main: az.main.Mainclass
 commands:
@@ -11,6 +11,7 @@ commands:
   deop:
   tpa:
   tpaccept:
+  tpacancel:
   tpadeny:
   difficulty:
   gamemode:

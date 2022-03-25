@@ -18,6 +18,7 @@ import az.commands.Sleepcommand;
 import az.commands.Teamchat;
 import az.commands.Tpa;
 import az.commands.TpaAccept;
+import az.commands.TpaCancel;
 import az.commands.TpaDeny;
 import az.events.Join;
 import az.events.Chat;
@@ -40,6 +41,7 @@ public class Mainclass extends JavaPlugin{
 		this.getCommand("bc").setExecutor(new Broadcast());
 		this.getCommand("op").setExecutor(new Op());
 		this.getCommand("deop").setExecutor(new Deop());
+		this.getCommand("tpacancel").setExecutor(new TpaCancel());
 		this.getCommand("tc").setExecutor(new Teamchat());
 		this.getCommand("tpa").setExecutor(new Tpa());
 		this.getCommand("tpaccept").setExecutor(new TpaAccept());
